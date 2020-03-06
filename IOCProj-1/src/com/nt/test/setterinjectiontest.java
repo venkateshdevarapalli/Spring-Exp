@@ -2,6 +2,7 @@ package com.nt.test;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
@@ -17,7 +18,11 @@ public class setterinjectiontest {
 		BeanFactory factory=null;
 		WishMessageGenerate generate=null;
 		
-		res=new FileSystemResource("src/com/nt/cfgs/applicationcontext.xml");
+		//using file-system-resource
+		//res=new FileSystemResource("src/com/nt/cfgs/applicationcontext.xml");
+		
+		//using class-path resource
+		res=new ClassPathResource("com/nt/cfgs/applicationcontext.xml");
 		factory =new XmlBeanFactory(res);
 		Object obj=factory.getBean("wmg");
 		//type-casting 
