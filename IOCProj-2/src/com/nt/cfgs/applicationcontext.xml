@@ -6,8 +6,9 @@
 	<!-- dependent cfg -->
 	<bean id="dt" class="java.util.Date"></bean>
 	
-	<!-- Target cfg -->
+	<!-- Target class -->
 	<bean id="msg" class="com.nt.beans.WishMessageGenerator">
+	<!-- Constructor-INjection -->
 	<constructor-arg name="date" ref="dt"></constructor-arg>
 	</bean>
 
