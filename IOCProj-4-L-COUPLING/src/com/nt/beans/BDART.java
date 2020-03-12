@@ -12,7 +12,7 @@ public class BDART implements courier
 	public String delivery(int oid)
 	{
 		
-		return "BDART IS REDY TO DELIVER THE PRODUCRT WITH "+oid;
+		return "BDART IS REDY TO DELIVER THE PRODUCRT WITH ORDER ID:: "+oid;
 	}
 
 }

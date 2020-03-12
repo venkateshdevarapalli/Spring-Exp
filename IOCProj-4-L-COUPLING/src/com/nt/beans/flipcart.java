@@ -35,7 +35,8 @@ public class flipcart
 		ran=new Random();
 		orderid=ran.nextInt(1000);
 		
-		cou.delivery(orderid);
+		String status=cou.delivery(orderid);
+		System.out.println(status);
 		
 		return "OrderId id-->"+orderid
 				+"--> Items List"+Arrays.toString(items)

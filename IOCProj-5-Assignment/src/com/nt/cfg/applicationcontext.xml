@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- dependent class -->   
+	<bean id="gpay" class="com.nt.beans.GPAY"></bean>
+	<bean id="phpay" class="com.nt.beans.PHPAY"></bean>
+	<bean id="paytm" class="com.nt.beans.PAYTM"></bean>
+	
+	<!-- Target class -->
+	<bean id="fpk" class="com.nt.beans.flipcart">
+	<!-- SetterInjuction -->
+<!-- 	<property name="po" ref="gpay"></property> -->
+	<property name="po" ref="paytm"></property>
+<!-- 	<property name="po" ref="phpay"></property> -->
+	</bean>
+        
+
+</beans>

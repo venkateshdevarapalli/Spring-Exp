@@ -14,7 +14,7 @@ public class DTDC implements courier
 	public String delivery(int oid) 
 	{
 		
-		return "DTDC is REDY TO  DELIVERY THE PRODUCT"+oid;
+		return "DTDC is REDY TO  DELIVERY THE PRODUCT :ORDER ID"+oid;
 	}
 
 }
